@@ -21,9 +21,6 @@
     "project_date": {
       "type": "date"
     },
-    "slug": {
-      "type": "string"
-    },
     "project_image": {
       "type": "media",
       "multiple": false,
@@ -37,6 +34,14 @@
     },
     "img_url": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "project_title"
+    },
+    "tags": {
+      "type": "customField",
+      "customField": "plugin::tagsinput.tags"
     }
   }
 }
